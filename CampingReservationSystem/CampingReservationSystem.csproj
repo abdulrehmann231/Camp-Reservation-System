@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B739DE92-6135-4346-9B86-9EB7246270F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CampingReservationSystem</RootNamespace>
+    <AssemblyName>CampingReservationSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GebruikerVoegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GebruikerVoegen.Designer.cs">
+      <DependentUpon>GebruikerVoegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beschikbaarheid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beschikbaarheid.Designer.cs">
+      <DependentUpon>Beschikbaarheid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReserveringWijzigen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserveringWijzigen.Designer.cs">
+      <DependentUpon>ReserveringWijzigen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReserveringMaken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserveringMaken.Designer.cs">
+      <DependentUpon>ReserveringMaken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlantGegevens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlantGegevens.Designer.cs">
+      <DependentUpon>KlantGegevens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlantLijst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlantLijst.Designer.cs">
+      <DependentUpon>KlantLijst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\CustomerModel.cs" />
+    <Compile Include="Database\Database.cs" />
+    <Compile Include="KlantVerwijderen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlantVerwijderen.Designer.cs">
+      <DependentUpon>KlantVerwijderen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReserveringVerwijderen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserveringVerwijderen.Designer.cs">
+      <DependentUpon>ReserveringVerwijderen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GebruikerVerwijderen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GebruikerVerwijderen.Designer.cs">
+      <DependentUpon>GebruikerVerwijderen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlantWijzigSelectie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlantWijzigSelectie.Designer.cs">
+      <DependentUpon>KlantWijzigSelectie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlantWijzigen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlantWijzigen.Designer.cs">
+      <DependentUpon>KlantWijzigen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GebruikerWijzigSelectie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GebruikerWijzigSelectie.Designer.cs">
+      <DependentUpon>GebruikerWijzigSelectie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GebruikerWijzigen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GebruikerWijzigen.Designer.cs">
+      <DependentUpon>GebruikerWijzigen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Factuur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factuur.Designer.cs">
+      <DependentUpon>Factuur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Methods\Methods.cs" />
+    <Compile Include="Ownerfeatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ownerfeatures.Designer.cs">
+      <DependentUpon>Ownerfeatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PrijsLijst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrijsLijst.Designer.cs">
+      <DependentUpon>PrijsLijst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Reservation_model.cs" />
+    <Compile Include="Omzet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Omzet.Designer.cs">
+      <DependentUpon>Omzet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReserveringSelecctie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserveringSelecctie.Designer.cs">
+      <DependentUpon>ReserveringSelecctie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlantSelectie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlantSelectie.Designer.cs">
+      <DependentUpon>KlantSelectie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GebruikersLijst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GebruikersLijst.Designer.cs">
+      <DependentUpon>GebruikersLijst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\gebruikersmodel.cs" />
+    <EmbeddedResource Include="GebruikerVoegen.resx">
+      <DependentUpon>GebruikerVoegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beschikbaarheid.resx">
+      <DependentUpon>Beschikbaarheid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReserveringWijzigen.resx">
+      <DependentUpon>ReserveringWijzigen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReserveringMaken.resx">
+      <DependentUpon>ReserveringMaken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlantGegevens.resx">
+      <DependentUpon>KlantGegevens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlantLijst.resx">
+      <DependentUpon>KlantLijst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlantVerwijderen.resx">
+      <DependentUpon>KlantVerwijderen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReserveringVerwijderen.resx">
+      <DependentUpon>ReserveringVerwijderen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GebruikerVerwijderen.resx">
+      <DependentUpon>GebruikerVerwijderen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlantWijzigSelectie.resx">
+      <DependentUpon>KlantWijzigSelectie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlantWijzigen.resx">
+      <DependentUpon>KlantWijzigen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GebruikerWijzigSelectie.resx">
+      <DependentUpon>GebruikerWijzigSelectie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GebruikerWijzigen.resx">
+      <DependentUpon>GebruikerWijzigen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Factuur.resx">
+      <DependentUpon>Factuur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ownerfeatures.resx">
+      <DependentUpon>Ownerfeatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PrijsLijst.resx">
+      <DependentUpon>PrijsLijst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Omzet.resx">
+      <DependentUpon>Omzet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReserveringSelecctie.resx">
+      <DependentUpon>ReserveringSelecctie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlantSelectie.resx">
+      <DependentUpon>KlantSelectie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GebruikersLijst.resx">
+      <DependentUpon>GebruikersLijst.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
